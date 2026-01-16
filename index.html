@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karabiner Hyperkey System - Apple Magic Keyboard with Touch ID & Numeric Keypad</title>
-    <!-- Version: 3.0.0 -->
+    <!-- Version: 4.0.0 -->
     <!-- Changelog:
+         v4.0.0 (17.01.2026) - MASSIVE ERWEITERUNG:
+                               - App-Chooser v3.0: 95 Apps auf 25 Tasten (vorher 22 auf 17)
+                               - Website-Chooser v2.2: 35 Websites auf 22 Tasten (vorher 15)
+                               - App-Chooser: 24 Konflikt-Dialoge, nur Y ist frei
+                               - Website-Chooser: 12 Konflikt-Dialoge, C+V reserviert (Copy/Paste)
+                               - Alle Setapp-Apps erfasst (CleanShot, Downie, Paste, etc.)
+                               - Docker, ChatGPT, Kindle, Obsidian, Ollama, ZeroWork, Zoom
+                               - Gesamt: 238 Shortcuts über 14 Kategorien
          v3.0.0 (14.01.2026) - Website-Chooser v1.0 mit natürlichen Buchstaben:
                                - Universelles System: website-chooser.sh + website-mappings.conf
                                - C+V AUSGESCHLOSSEN (System-Shortcuts Copy/Paste)
@@ -194,13 +202,13 @@
 </head>
 <body>
     <h1>⌨️ Karabiner Hyperkey System</h1>
-    <p class="subtitle">Apple Magic Keyboard with Touch ID & Numeric Keypad (US ANSI) • 14 Kategorien • 165 Shortcuts</p>
+    <p class="subtitle">Apple Magic Keyboard with Touch ID & Numeric Keypad (US ANSI) • 14 Kategorien • 238 Shortcuts</p>
 
     <div class="tabs">
-        <div class="tab tab-app active" onclick="showSection('app')">⌨️ App (22)</div>
+        <div class="tab tab-app active" onclick="showSection('app')">⌨️ App (95)</div>
         <div class="tab tab-window" onclick="showSection('window')">🪟 Window (19)</div>
         <div class="tab tab-folder" onclick="showSection('folder')">📁 Folder (20)</div>
-        <div class="tab tab-content" onclick="showSection('content')">🌐 Website (15)</div>
+        <div class="tab tab-content" onclick="showSection('content')">🌐 Website (35)</div>
         <div class="tab tab-camera" onclick="showSection('camera')">📹 Camera (10)</div>
         <div class="tab tab-cleanshot" onclick="showSection('cleanshot')">📸 CleanShot (7)</div>
         <div class="tab tab-fkeys" onclick="showSection('fkeys')">🎹 F1-F8 (8)</div>
@@ -218,9 +226,9 @@
         <div class="keyboard-container" style="--active-color: #3b82f6; --active-stroke: #60a5fa; --trigger-color: #1e40af;">
             <div class="section-header">
                 <div class="trigger-key" style="background: #1e40af; color: #fff;">⇪ Caps Lock</div>
-                <span class="section-title">App Hyper (22 Shortcuts, 9 Konflikt-Dialoge)</span>
+                <span class="section-title">App Hyper (95 Apps, 24 Konflikt-Dialoge)</span>
             </div>
-            <p class="section-desc">Universelles App-Chooser-System • Halte Caps Lock + Buchstabe • ⚡ = Auswahldialog • Freie Buchstaben: B, J, L, N, T, U, X, Y, Z</p>
+            <p class="section-desc">Universelles App-Chooser-System • Halte Caps Lock + Buchstabe • ⚡ = Auswahldialog • Freier Buchstabe: Y</p>
 
             <svg class="keyboard-svg" viewBox="0 0 1340 250" xmlns="http://www.w3.org/2000/svg">
                 <!-- Keyboard Frame -->
@@ -702,10 +710,10 @@
     <div id="section-content" class="keyboard-section">
         <div class="keyboard-container" style="--active-color: #a855f7; --active-stroke: #c084fc; --trigger-color: #7e22ce;">
             <div class="section-header">
-                <div class="trigger-key" style="background: #7e22ce; color: #fff;">⌃ Left Control</div>
-                <span class="section-title">Website Hyper (15 Shortcuts)</span>
+                <div class="trigger-key" style="background: #7e22ce; color: #fff;">⌃⌥ Left Ctrl+Opt</div>
+                <span class="section-title">Website Hyper (35 Websites, 12 Konflikt-Dialoge)</span>
             </div>
-            <p class="section-desc">Halte linke ⌃ gedrückt + Buchstabe = Website öffnen</p>
+            <p class="section-desc">Universelles Website-Chooser-System • Halte ⌃⌥ (linke Ctrl+Option) + Buchstabe • ⚡ = Auswahldialog • C+V reserviert (Copy/Paste)</p>
 
             <svg class="keyboard-svg" viewBox="0 0 1340 250" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0" y="0" width="1340" height="250" rx="12" fill="#e8e8e8" stroke="#c0c0c0" stroke-width="2"/>
